@@ -32,5 +32,5 @@ This program is states that to find the number between some range that the numbe
 This program lies in three parts;
 First part : first arr , n contains length of array;
 Second part : 1st loop will iterate between the array andf contain a boolean of isMissing;
-Third part : 2nd loop will compare and find whether it contain the missing number or not is yes then if condition will print that .....
+Third part : 2nd loop will compare and find whether it contain the missing number or not is yes then if condition will print that .......
 */
