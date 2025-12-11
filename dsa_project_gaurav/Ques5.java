@@ -30,5 +30,5 @@ public class Ques5 {
 }
 
 /*
-
+It is the most simple question in which we have to just find the number which give maximum average.
 */
