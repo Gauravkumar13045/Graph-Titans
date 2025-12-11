@@ -28,3 +28,7 @@ public class Ques5 {
         System.out.println(maxAvg);
     }
 }
+
+/*
+
+*/
