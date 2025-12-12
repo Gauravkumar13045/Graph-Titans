@@ -39,3 +39,6 @@ public class Ques6 {
 
     }
 }
+
+// I hv used the famous “Sort Colors” (Dutch National Flag problem) to solve this question .
+// Happy Coding !!!.....
