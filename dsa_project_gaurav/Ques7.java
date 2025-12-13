@@ -28,3 +28,12 @@ public class Ques7 {
 
     }
 }
+
+/*
+ * This is the simple code we just have to do is to sort to positive and
+ * negative nothing else
+ * so i have added two loop one will copy only positive and another negative and
+ * at last we will copy the all of it and hence solved !!!...
+ * 
+ * HAPPY CODING !!!...
+ */
