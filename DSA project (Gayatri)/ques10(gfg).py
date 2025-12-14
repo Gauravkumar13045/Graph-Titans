@@ -1,21 +1,25 @@
+import sys
+
 class Solution:
-    def segregateElements(self, arr):
+    def firstRepeated(self, arr):
         n = len(arr)
-        
-        
-        temp = []
-        
-        
-        for x in arr:
-            if x >= 0:
-                temp.append(x)
-        
-       
-    
-        for x in arr:
-            if x < 0:
-                temp.append(x)
-                
+        min_first_index = sys.maxsize 
         
         for i in range(n):
-            arr[i] = temp[i]
+            for j in range(i + 1, n):
+                
+                if arr[i] == arr[j]:
+                    current_1_based_index = i + 1
+                    
+                    if current_1_based_index < min_first_index:
+                        min_first_index = current_1_based_index
+                        
+                    break 
+            
+            if i + 1 == min_first_index and min_first_index != sys.maxsize:
+                 break
+
+        if min_first_index == sys.maxsize:
+            return -1
+        else:
+            return min_first_index

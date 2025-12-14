@@ -1,7 +1,12 @@
-def move_negatives(nums):
-    j = 0
-    for i in range(len(nums)):
-        if nums[i] < 0:
-            nums[i], nums[j] = nums[j], nums[i]
-            j += 1
-    return nums
+my_list = [-1, 2, -3, 4, -5]
+new_list = []
+
+for number in my_list:
+    if number < 0:
+        new_list.append(number)
+
+for number in my_list:
+    if number >= 0:
+        new_list.append(number)
+
+print(new_list)
