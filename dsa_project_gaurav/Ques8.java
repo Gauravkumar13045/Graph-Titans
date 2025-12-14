@@ -36,10 +36,8 @@ public class Ques8 {
     }
 }
 /*
-This code treats the array like a path where each number points to the next index, similar to a linked list.
-Because one number repeats, a cycle is formed. First, two pointers (slow and fast) move through the array at different speeds until they meet inside the cycle.
-Then, one pointer is reset to the start, and both move step by step until they meet again. The meeting point is the duplicate number.
- In simple terms, the code cleverly detects the repeated value without extra memory or changing the array.
+isme Floyd’s Tortoise and Hare (Cycle Detection) algorithm ka use kiya gaya hai too jisme two pointers ko inittialize kiya gaya hai and fast and slow dono cycle ko
+taab tak move karo jaab tak wo meet naa kare then at last reset krna and duplicate ko return hai and all set !!!...
 
  HAPPY CODING !!!...
 */
