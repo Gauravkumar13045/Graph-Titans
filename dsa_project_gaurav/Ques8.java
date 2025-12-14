@@ -1,3 +1,9 @@
+/*
+Given an array of integers nums containing n + 1 integers where each integer is in the range [1, n] inclusive.
+There is only one repeated number in nums, return this repeated number.
+You must solve the problem without modifying the array nums and using only constant extra space.
+*/
+
 package dsa_project_gaurav;
 
 public class Ques8 {
@@ -27,12 +33,10 @@ public class Ques8 {
     public static void main(String[] args) {
         Ques8 obj = new Ques8();
         int[] nums1 = {1, 3, 4, 2, 2};
-        int[] nums2 = {3, 1, 3, 4, 2};
-        int[] nums3 = {3, 3, 3, 3, 3};
+
 
         System.out.println("Duplicate in nums1: " + obj.findDuplicate(nums1)); 
-        System.out.println("Duplicate in nums2: " + obj.findDuplicate(nums2)); 
-        System.out.println("Duplicate in nums3: " + obj.findDuplicate(nums3)); 
+
     }
 }
 /*
