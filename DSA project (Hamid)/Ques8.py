@@ -2,14 +2,14 @@ def find_duplicate(nums):
     slow = nums[0]
     fast = nums[0]
 
-    # Phase 1: detect cycle
+    # Phase 1: detect cycle for it 
     while True:
         slow = nums[slow]
         fast = nums[nums[fast]]
         if slow == fast:
             break
 
-    # Phase 2: find cycle entrance
+    # Phase 2: find cycle entrance for it
     slow2 = nums[0]
     while slow2 != slow:
         slow = nums[slow]
