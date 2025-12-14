@@ -1,9 +1,12 @@
-def remove_duplicates(nums):
-    if not nums: return 0
-    
-    i = 0  # Slow pointer
-    for j in range(1, len(nums)):
-        if nums[j] != nums[i]:
-            i += 1
-            nums[i] = nums[j]
-    return i + 1, nums[:i+1]
+my_list = [1, 1, 2, 2, 3]
+new_list = []
+
+for number in my_list:
+    found = False
+    for value in new_list:
+        if number == value:
+            found = True
+    if found == False:
+        new_list.append(number)
+
+print(new_list)

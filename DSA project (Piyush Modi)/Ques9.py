@@ -1,4 +1,4 @@
-my_list = [3, 0, 1]
+my_list = [1, 2, 2, 4, 5]
 
 n = len(my_list)
 

@@ -1,14 +1,24 @@
-def sort_colors(nums):
-    low, mid, high = 0, 0, len(nums) - 1
-    
-    while mid <= high:
-        if nums[mid] == 0:
-            nums[low], nums[mid] = nums[mid], nums[low]
-            low += 1
-            mid += 1
-        elif nums[mid] == 1:
-            mid += 1
-        else:
-            nums[mid], nums[high] = nums[high], nums[mid]
-            high -= 1
-    return nums
+my_list = [2, 0, 2, 1, 1, 0]
+
+count_zero = 0
+count_one = 0
+count_two = 0
+
+for number in my_list:
+    if number == 0:
+        count_zero = count_zero + 1
+    elif number == 1:
+        count_one = count_one + 1
+    else:
+        count_two = count_two + 1
+
+sorted_list = []
+
+for i in range(count_zero):
+    sorted_list.append(0)
+for i in range(count_one):
+    sorted_list.append(1)
+for i in range(count_two):
+    sorted_list.append(2)
+
+print(sorted_list)

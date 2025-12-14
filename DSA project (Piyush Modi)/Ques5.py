@@ -1,9 +1,14 @@
-def find_max_average(nums, k):
-    curr_sum = sum(nums[:k])
-    max_sum = curr_sum
-    
-    for i in range(k, len(nums)):
-        curr_sum += nums[i] - nums[i - k]
-        max_sum = max(max_sum, curr_sum)
-        
-    return max_sum / k
+my_list = [1, 12, -5, -6, 50, 3]
+window_size = 4
+
+max_sum = None
+
+for start_index in range(len(my_list) - window_size + 1):
+    current_sum = 0
+    for index in range(start_index, start_index + window_size):
+        current_sum = current_sum + my_list[index]
+    if max_sum is None or current_sum > max_sum:
+        max_sum = current_sum
+
+average = max_sum / window_size
+print(average)
